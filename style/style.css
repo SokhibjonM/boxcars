@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container_fluid {
+    max-width: 1580px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+/* Navbar */
+
+.nav {
+    height: 103px;
+    display: flex;
+    align-items: center;
+}
+
+.nav * {
+    font-size: 15px;
+    color: #050B20;
+}
+
+.nav_logo {
+    margin-right: 40px;
+}
+
+.nav_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_list-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.nav_list-item_link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.phone_img {
+    margin-right: 10px;
+}
+
+.nav_buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_buttons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav_buttons a img {
+    margin-right: 10px;
+}
+
+.nav_btn {
+    border: 1px solid #050B20;
+    border-radius: 16px;
+    padding: 10px 26px;
+    background-color: transparent;
+}
+
+/* Main */
+
+/* Swiper Code */
+
+.swiper_body {
+    position: relative;
+    height: 565px;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: flex;
+    justify-content: center !important;
+    width: 60px;
+    height: 40px;
+    --swiper-navigation-size: 28px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.swiper_text {
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.swiper_text h4 {
+    font-size: 16px;
+}
+
+.swiper_text h2 {
+    font-size: 52px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+
+/* Body style Section */
+
+.bodyStyle_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodyStyle_header {
+    margin: 115px 0 30px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #050B20;
+}
+
+.bodyStyle_card {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 100px;
+}
+
+.bodyStyle_card img {
+    object-fit: cover;
+}
+
+.bodyStyle_card p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #050B20;
+}
+
+/* Matters section */
+.matters{
+    background-color: #F9FBFC;
+    padding: 115px 0;
+}
+.matters_row {
+    display: flex;
+}
+
+.matters_left {
+    width: 50%;
+}
+
+.matters_left h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #050B20;
+    line-height: 48px;
+}
+
+.matters_right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.matters_card {
+    width: 50%;
+}
+
+.matters_card:nth-child(3),
+.matters_card:nth-child(4) {
+    margin-top: 46px;
+}
+
+.matters_card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #050B20;
+    line-height: 24px;
+    margin: 20px 0 15px;
+}
+
+.matters_card p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* Searched section */
+.searched_header{
+    margin-top: 115px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #050B20;
+}
+
+.searched_nav{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.searched_nav_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+.searched_nav_list-item{
+    list-style-type: none;
+}
+
+.searched_nav_list-item_link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #050B20;
+    padding-bottom: 27px;
+    border-bottom: 2px solid transparent;
+}
+.searched_nav_list-item_link:hover{
+    border-bottom: 2px solid #405FF2;
+}
+.searched_content{
+    width: 100%;
+    min-height: 545px;
+}
+.searched_row{
+    width: 100%;
+    min-height: 433px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+.searched_card{
+    width: 100%;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-radius: 16px;
+}
+
+.searched_card-header{
+    width: 100%;
+    position: relative;
+}
+
+.searched_card-header img{
+    border-radius: 16px 16px 0 0;
+}
+
+.searched_card-header-content{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.searched_card-header-content_btnPrise{
+    border: none;
+    padding: 1.5px 15px;
+    border-radius: 30px;
+    background-color: #3D923A;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.searched_card-header-content_btnSale{
+    border: none;
+    padding: 1.5px 15px;
+    border-radius: 30px;
+    background-color: #405FF2;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+.searched_card-header-content img{
+    margin-left: auto;
+}
+
+.searched_card-body{
+    padding: 0 31px 19px 31px;
+}
+.cars_name-info{
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+.cars_name-info h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #050B20;
+}
+.cars_name-info p, .cars_fix-icons p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #050B20;
+}
+.cars_extra-info{
+    padding: 16px 0;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    display: flex;
+    justify-content: space-between;
+}
+.cars_fix-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.card_prise-info{
+    margin-top: 16px;
+}
+.card_prise-old_info del{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #050B20;
+}
+.card_prise-present_info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_prise-present_info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #050B20;
+}
+.card_prise-present_info a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #405FF2;
+}
+
+.searched_buttons{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.searched_prev-btn, .searched_next-btn{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #E9E9E9;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Questions section */
+
+.questions_row{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-top: 104px;
+}
+.questions_card{
+    width: 100%;
+    padding: 80px 80px 50px;
+    border-radius: 16px;
+}
+.questions_card-first{
+    background-color: #E9F2FF;
+}
+
+.questions_card-second{
+    background-color: #FFE9F3;
+}
+.questions_card h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #050B20;
+}
+.questions_card p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #050B20;
+}
+
+.questions_card-footer{
+    margin-top: -6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions_card-btn{
+    padding: 22px 26px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.questions_card-btn-primary{
+    border: 1px solid #405FF2;
+    background-color: #405FF2;
+}
+.questions_card-btn-black{
+    border: 1px solid #050B20;
+    background-color: #050B20;
+}
+
+/* Recommended Section */
+
+.recommended_header{
+    text-align: center;
+    margin-top: 115px;
+    font-size: 40px;
+    font-weight: 700;  
+    color: #050B20;
+}
